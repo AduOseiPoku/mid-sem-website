@@ -528,4 +528,35 @@ details[open] [data-detail-label]::after { content: 'Hide Details'; }
     .nav-links.open {
         display: flex;
     }
+
+    .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 32px;
+    }
+
+    blockquote {
+        font-size: 1.2rem;
+    }
+
+    .email-btn {
+        padding: 14px 24px;
+        font-size: 0.85rem;
+        word-break: break-all;
+    }
+
+    .cta-panel {
+        padding: 28px 16px;
+    }
+
+    .stat-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .primary-btn,
+    .secondary-btn {
+        min-width: unset;
+        width: 100%;
+    }
 }
